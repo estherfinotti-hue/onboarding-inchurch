@@ -70,8 +70,10 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 
 /* ORGANOGRAMA */
 .org-wrap{display:flex;flex-direction:column;align-items:center;}
-.org-root{background:var(--dark);color:#fff;border-radius:14px;padding:14px 28px;text-align:center;font-size:14px;font-weight:700;border:2px solid var(--g);}
-.org-root span{font-size:11px;font-weight:400;color:rgba(255,255,255,0.5);display:block;margin-top:2px;}
+.org-root{background:var(--dark);color:#fff;border-radius:16px;padding:16px 40px;text-align:center;border:2px solid var(--g);}
+.org-root-eyebrow{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--g);margin-bottom:3px;}
+.org-root-name{font-size:16px;font-weight:800;}
+.org-root span{font-size:11px;font-weight:400;color:rgba(255,255,255,0.5);display:block;margin-top:4px;}
 .org-connector-v{width:2px;height:28px;background:var(--border2);margin:0 auto;}
 .org-connector-h{width:100%;height:2px;background:var(--border2);}
 .org-branches{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;width:100%;}
@@ -253,6 +255,18 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
   .home-inner{padding:2rem 1rem;}
   .nome-input-row{flex-direction:column;}
 }
+.team-stats{display:flex;gap:10px;margin-bottom:1.5rem;flex-wrap:wrap;}
+.team-stat{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 20px;}
+.team-stat-num{font-size:20px;font-weight:800;color:var(--text);letter-spacing:-0.02em;}
+.team-stat-label{font-size:11px;color:var(--text3);font-weight:500;margin-top:1px;}
+.team-group-label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text3);margin-bottom:8px;}
+.team-pills{display:flex;flex-wrap:wrap;gap:6px;}
+.team-pill{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:99px;font-size:12px;font-weight:500;color:var(--text2);background:var(--card2);border:1px solid var(--border);white-space:nowrap;}
+.team-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;}
+.team-badge{font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:2px;}
+.team-badge-coord{background:var(--gl);color:var(--gd);}
+.team-badge-ka{background:#fef2e5;color:#b87218;}
+.team-subnote{font-size:10px;color:var(--text3);font-weight:400;}
 </style>
 <script>
 function switchTab(name,el){
@@ -337,10 +351,16 @@ function toggleOrg(id){
 
     <div class="home-divider"></div>
     <div class="section-label">estrutura · customer experience</div>
-    <p style="font-size:13px;color:var(--text2);margin-bottom:2rem;line-height:1.7;max-width:640px;">A área de Customer Experience tem como missão garantir que cada cliente tenha uma jornada de sucesso, desde o primeiro contato até a consolidação do relacionamento. Clique em cada área para conhecer mais.</p>
+    <p style="font-size:13px;color:var(--text2);margin-bottom:1.5rem;line-height:1.7;max-width:640px;">A área de Customer Experience tem como missão garantir que cada cliente tenha uma jornada de sucesso, desde o primeiro contato até a consolidação do relacionamento. Clique em cada área para conhecer as responsabilidades e o time responsável.</p>
+
+    <div class="team-stats">
+      <div class="team-stat"><div class="team-stat-num">24</div><div class="team-stat-label">Pessoas</div></div>
+      <div class="team-stat"><div class="team-stat-num">2</div><div class="team-stat-label">Áreas</div></div>
+      <div class="team-stat"><div class="team-stat-num">6</div><div class="team-stat-label">Squads</div></div>
+    </div>
 
     <div class="org-wrap">
-      <div class="org-root">Customer Experience <span>inChurch</span></div>
+      <div class="org-root"><div class="org-root-eyebrow">Gestão</div><div class="org-root-name">Jonas Manhães</div><span>Customer Experience · inChurch</span></div>
       <div class="org-connector-v"></div>
       <div class="org-connector-h"></div>
       <div class="org-branches">
@@ -354,6 +374,20 @@ function toggleOrg(id){
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Orientar sobre funcionalidades e boas práticas</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Identificar oportunidades de melhoria</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Registrar aprendizados e feedbacks</div></div>
+              <div class="team-group-label" style="margin-top:14px;">N1</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#6395f5;"></span>Gabriel Knust</div>
+                <div class="team-pill"><span class="team-dot" style="background:#6395f5;"></span>Raphael Loera</div>
+                <div class="team-pill"><span class="team-dot" style="background:#6395f5;"></span>Nathan Rodrigues</div>
+                <div class="team-pill"><span class="team-dot" style="background:#6395f5;"></span>Esther Finotti</div>
+                <div class="team-pill"><span class="team-dot" style="background:#6395f5;"></span>João Santos</div>
+              </div>
+              <div class="team-group-label" style="margin-top:10px;">N2</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#9b7ef8;"></span>Guilherme Souza</div>
+                <div class="team-pill"><span class="team-dot" style="background:#9b7ef8;"></span>Felipe Teixeira</div>
+                <div class="team-pill"><span class="team-dot" style="background:#9b7ef8;"></span>Tiago Triani</div>
+              </div>
             </div>
           </div>
         </div>
@@ -367,6 +401,15 @@ function toggleOrg(id){
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Apoiar configurações e primeiros passos</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Capacitar usuários e líderes</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Garantir ativação e adoção inicial</div></div>
+              <div class="team-group-label" style="margin-top:14px;">Time</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#4bbf94;"></span>Ana Costa <span class="team-badge team-badge-coord">Coord.</span></div>
+                <div class="team-pill"><span class="team-dot" style="background:#4bbf94;"></span>Leandra Costa</div>
+                <div class="team-pill"><span class="team-dot" style="background:#4bbf94;"></span>Isabelly Vieira</div>
+                <div class="team-pill"><span class="team-dot" style="background:#4bbf94;"></span>Michelle Brito</div>
+                <div class="team-pill"><span class="team-dot" style="background:#4bbf94;"></span>Anelisa Fernandes</div>
+                <div class="team-pill"><span class="team-dot" style="background:#4bbf94;"></span>Fernanda Gomes</div>
+              </div>
             </div>
           </div>
         </div>
@@ -380,6 +423,15 @@ function toggleOrg(id){
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Estimular o uso das funcionalidades</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Identificar oportunidades de crescimento</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Promover engajamento contínuo</div></div>
+              <div class="team-group-label" style="margin-top:14px;">Time</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Igor Firmino</div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Hannibal Ferreira</div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Thamara de Paula <span class="team-subnote">(Sara Nossa Terra)</span></div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Gianmarco Lacerda</div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Noemi Garcia</div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Caroline Martins</div>
+              </div>
             </div>
           </div>
         </div>
@@ -393,6 +445,10 @@ function toggleOrg(id){
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Criar estratégias de recuperação</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Entender causas de cancelamento</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Aumentar satisfação e fidelização</div></div>
+              <div class="team-group-label" style="margin-top:14px;">Time</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#e87070;"></span>Michely Nunes</div>
+              </div>
             </div>
           </div>
         </div>
@@ -406,11 +462,16 @@ function toggleOrg(id){
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Desenvolver planos de sucesso</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Identificar oportunidades estratégicas</div></div>
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Atuar como parceiro consultivo</div></div>
+              <div class="team-group-label" style="margin-top:14px;">Time</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#f0a84b;"></span>Marina Machado <span class="team-badge team-badge-ka">KA</span></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
