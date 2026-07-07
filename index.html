@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Onboarding · Suporte · inChurch</title>
 <style>
@@ -239,6 +240,10 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 .gloss-search input{border:none;background:transparent;font-family:'Inter',sans-serif;font-size:14px;color:var(--text);outline:none;flex:1;}
 .gloss-search input::placeholder{color:var(--text3);}
 .gloss-grid{display:flex;flex-direction:column;gap:8px;}
+.gloss-groups{display:flex;flex-direction:column;gap:1.75rem;}
+.gloss-cat-head{display:flex;align-items:center;gap:8px;margin-bottom:10px;}
+.gloss-cat-icon{font-size:15px;}
+.gloss-cat-label{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--gd);}
 .gloss-item{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:14px 16px;transition:border-color .2s;box-shadow:0 1px 4px rgba(0,0,0,0.04);}
 .gloss-item:hover{border-color:var(--border2);}
 .gloss-term{font-size:14px;font-weight:600;color:var(--gd);margin-bottom:4px;}
@@ -487,7 +492,7 @@ function toggleOrg(id){
   <div class="day-card" id="day1">
     <div class="day-header" onclick="toggleCard('day1')">
       <div class="day-num">1</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Boas Vindas 💚</span><span class="day-date">08/07</span></div><div class="day-sub">Fase 1 – Integração · Conhecer a empresa, ferramentas e a jornada do suporte</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Boas Vindas 💚</span><span class="day-date">09/07</span></div><div class="day-sub">Fase 1 – Integração · Conhecer a empresa, ferramentas e a jornada do suporte</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -504,7 +509,7 @@ function toggleOrg(id){
   <div class="day-card" id="day2">
     <div class="day-header" onclick="toggleCard('day2')">
       <div class="day-num">2</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Na Prática 📚</span><span class="day-date">09/07</span></div><div class="day-sub">Fase 2 – Aprendizado · Conhecer produtos, sistemas e processos</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Na Prática 📚</span><span class="day-date">10/07</span></div><div class="day-sub">Fase 2 – Aprendizado · Conhecer produtos, sistemas e processos</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -522,7 +527,7 @@ function toggleOrg(id){
   <div class="day-card" id="day3">
     <div class="day-header" onclick="toggleCard('day3')">
       <div class="day-num">3</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Continuação Na Prática 📚</span><span class="day-date">10/07</span></div><div class="day-sub">Fase 2 – Aprendizado · Aprofundar conhecimento das ferramentas</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Continuação Na Prática 📚</span><span class="day-date">13/07</span></div><div class="day-sub">Fase 2 – Aprendizado · Aprofundar conhecimento das ferramentas</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -538,7 +543,7 @@ function toggleOrg(id){
   <div class="day-card" id="day4">
     <div class="day-header" onclick="toggleCard('day4')">
       <div class="day-num">4</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Prática com o Gabriel 🎯</span><span class="day-date">13/07</span></div><div class="day-sub">Fase 3 – Prática Assistida · Simulações e cenários de atendimento</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Prática com o Gabriel 🎯</span><span class="day-date">14/07</span></div><div class="day-sub">Fase 3 – Prática Assistida · Simulações e cenários de atendimento</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -554,7 +559,7 @@ function toggleOrg(id){
   <div class="day-card" id="day5">
     <div class="day-header" onclick="toggleCard('day5')">
       <div class="day-num">5</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Prática do Colaborador com auxílio do Gabriel 💻</span><span class="day-date">14/07</span></div><div class="day-sub">Fase 4 – Atendimento Assistido · Iniciar atendimentos com acompanhamento</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Prática do Colaborador com auxílio do Gabriel 💻</span><span class="day-date">15/07</span></div><div class="day-sub">Fase 4 – Atendimento Assistido · Iniciar atendimentos com acompanhamento</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -566,7 +571,7 @@ function toggleOrg(id){
   <div class="day-card" id="day6">
     <div class="day-header" onclick="toggleCard('day6')">
       <div class="day-num">6</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Prática do Colaborador com auxílio do Gabriel 🚀</span><span class="day-date">15/07</span></div><div class="day-sub">Fase 4 – Atendimento Assistido · Maior autonomia</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Prática do Colaborador com auxílio do Gabriel 🚀</span><span class="day-date">16/07</span></div><div class="day-sub">Fase 4 – Atendimento Assistido · Maior autonomia</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -578,7 +583,7 @@ function toggleOrg(id){
   <div class="day-card" id="day7">
     <div class="day-header" onclick="toggleCard('day7')">
       <div class="day-num">7</div>
-      <div class="day-meta"><div class="day-title-row"><span class="day-title">Validação e Encerramento 🏆</span><span class="day-date">16/07</span></div><div class="day-sub">Fase 5 – Validação e Autonomia · Consolidar aprendizados</div></div>
+      <div class="day-meta"><div class="day-title-row"><span class="day-title">Validação e Encerramento 🏆</span><span class="day-date">17/07</span></div><div class="day-sub">Fase 5 – Validação e Autonomia · Consolidar aprendizados</div></div>
       <span class="chevron">&#8964;</span>
     </div>
     <div class="day-body">
@@ -693,7 +698,7 @@ function toggleOrg(id){
       <span style="font-size:18px;color:var(--text3)">🔍</span>
       <input type="text" id="gloss-input" placeholder="Buscar termo..." oninput="filterGloss()">
     </div>
-    <div class="gloss-grid" id="gloss-grid"></div>
+    <div class="gloss-groups" id="gloss-grid"></div>
   </div>
 </div>
 
@@ -712,33 +717,42 @@ const LINKS_DATA=[
   {id:'formfin',icon:'📝',name:'Formulário Financeiro',desc:'Registro de solicitações internas financeiras.',url:'https://n8n.tools.inchurch.com.br/form/alteracoes_CS'},
   {id:'artigos',icon:'✏️',name:'Artigos | Atualização & Criação',desc:'Formulário para registrar atualizações internas de FAQ e base de conhecimento.',url:'https://docs.google.com/forms/d/e/1FAIpQLSf0lZlytHTGCfKnaIHcGeQPVV_XnAb1SwXwvs9M_Vuod_VynA/viewform'},
   {id:'statusios',icon:'📱',name:'Status App iOS',desc:'Acompanhamento do status do aplicativo iOS.',url:'https://docs.google.com/spreadsheets/d/1Ln0Yg93ZXMMVAKCYF-wcAzjT2OzEFgKD4Axut0-ucT4/edit?gid=1215148722#gid=1215148722'},
+  {id:'formcomercial',icon:'🤝',name:'Formulário Comercial',desc:'Formulário para solicitações e encaminhamentos comerciais.',url:'https://form.typeform.com/to/yONeJkKV?typeform-source=inchurch.com.br'},
+  {id:'formsugestao',icon:'💡',name:'Formulário de Sugestão',desc:'Envio de sugestões e contatos com a central de ajuda.',url:'https://centraldeajuda.inchurch.com.br/pt-BR/contatos'},
 ];
 
+const GLOSS_CATEGORIAS=[
+  {id:'indicadores',icon:'📊',label:'Indicadores de Atendimento'},
+  {id:'acessos',icon:'🔐',label:'Perfis e Acessos'},
+  {id:'plataforma',icon:'⛪',label:'Plataforma inChurch'},
+  {id:'ambientes',icon:'🖥️',label:'Ambientes'},
+  {id:'tecnicos',icon:'💻',label:'Termos Técnicos'},
+];
 const GLOSSARIO=[
-  {term:'TPR',def:'Tempo de primeira resposta. Mede o tempo que o cliente aguarda desde o envio da primeira mensagem até o atendente (ou bot) responder.'},
-  {term:'TMI',def:'Tempo médio de interação. É um indicador crucial que mede a velocidade e a eficiência do suporte.'},
-  {term:'CSAT',def:'Customer Satisfaction Score. É o principal indicador para medir a satisfação do cliente com uma interação ou serviço específico.'},
-  {term:'SLA',def:'Acordo de Nível de Serviço. São indicadores cruciais utilizados para medir o tempo e a qualidade do suporte oferecido.'},
-  {term:'Administrador de Denominação',def:'Administrador geral do painel, possui acesso a todas as funcionalidades e configurações da plataforma. É responsável por gerenciar permissões, liberar acessos para outros usuários e definir quais funcionalidades cada pessoa poderá utilizar.'},
-  {term:'Membro de equipe',def:'Usuário que terá acesso apenas às funcionalidades e áreas liberadas pelo Administrador. As permissões devem ser configuradas individualmente no painel (V1), de acordo com a necessidade de cada pessoa.'},
-  {term:'Igreja Filha',def:'É uma unidade vinculada à igreja matriz/sede, criada quando uma igreja possui outras unidades ou congregações. A igreja filha segue a estrutura da igreja principal, mas possui seu próprio cadastro e organização dentro da plataforma.'},
-  {term:'Key Account',def:'Termo corporativo usado para definir clientes estratégicos que possuem o maior impacto nos resultados de uma empresa. Neste caso, igrejas estratégicas para a empresa, seja por parceria, tamanho etc.'},
-  {term:'Deploy',def:'Processo de publicar uma nova versão de uma aplicação em um servidor para que ela possa ser utilizada. O deploy é o que faz uma alteração de código chegar ao ambiente onde o sistema realmente roda.'},
-  {term:'Aplicação',def:'Qualquer tipo de sistema da inChurch (Eventos, Pessoas, Cuidado, etc.)'},
-  {term:'Plano Pró',def:'Pode cadastrar igreja filha, tem possibilidade de personalização do aplicativo e Atalhos como módulo adicional.'},
-  {term:'Plano Lite',def:'O plano Lite inclui as funcionalidades básicas para utilização do aplicativo da igreja, permitindo uma comunicação mais simples com os membros.'},
-  {term:'Produção',def:'Ambiente onde o usuário acessa o sistema, onde a igreja faz as coisas acontecerem de fato.'},
-  {term:'Staging',def:'Ambiente de testes, onde o usuário comum não tem acesso. É onde fazemos os testes das funcionalidades antes de subir para Produção.'},
-  {term:'Desenvolvimento',def:'Ambiente voltado para criação de novas funcionalidades, melhorias ou correção de bugs.'},
-  {term:'Front-End',def:'Lugar onde o usuário interage visualmente com o sistema inChurch.'},
-  {term:'Back-End',def:'Parte do sistema onde ocorre os processamentos das regras e pedidos do usuário, o "Cérebro do Sistema".'},
-  {term:'LOG',def:'Registro que é feito a cada ação do cliente no ambiente de produção.'},
-  {term:'Servidor',def:'É a máquina (física ou na nuvem) onde a aplicação fica rodando. Exemplos: Vercel, Railway, Google Cloud e AWS.'},
-  {term:'API',def:'Conjunto de regras que permite a comunicação entre sistemas. O Front-End envia uma requisição, o Back-End processa e retorna uma resposta em formato JSON.'},
-  {term:'Endpoint',def:'Endereço específico dentro de uma API. Exemplo: /api/v1/login, /api/v1/events, /api/v1/users'},
-  {term:'Request (Requisição)',def:'É tudo que o cliente envia para o servidor: URL, Método HTTP, Headers e Body.'},
-  {term:'Response',def:'É a resposta da Requisição feita, enviada para o Front-End em formato .json, que processa e exibe de forma visual ao usuário.'},
-  {term:'JSON',def:'Formato utilizado para armazenar e trocar dados entre sistemas. É a linguagem que Frontend, Backend, APIs e bancos de dados frequentemente usam para se comunicar.'},
+  {term:'TPR',cat:'indicadores',def:'Tempo de primeira resposta. Mede o tempo que o cliente aguarda desde o envio da primeira mensagem até o atendente (ou bot) responder.'},
+  {term:'TMI',cat:'indicadores',def:'Tempo médio de interação. É um indicador crucial que mede a velocidade e a eficiência do suporte.'},
+  {term:'CSAT',cat:'indicadores',def:'Customer Satisfaction Score. É o principal indicador para medir a satisfação do cliente com uma interação ou serviço específico.'},
+  {term:'SLA',cat:'indicadores',def:'Acordo de Nível de Serviço. São indicadores cruciais utilizados para medir o tempo e a qualidade do suporte oferecido.'},
+  {term:'Administrador de Denominação',cat:'acessos',def:'Administrador geral do painel, possui acesso a todas as funcionalidades e configurações da plataforma. É responsável por gerenciar permissões, liberar acessos para outros usuários e definir quais funcionalidades cada pessoa poderá utilizar.'},
+  {term:'Membro de equipe',cat:'acessos',def:'Usuário que terá acesso apenas às funcionalidades e áreas liberadas pelo Administrador. As permissões devem ser configuradas individualmente no painel (V1), de acordo com a necessidade de cada pessoa.'},
+  {term:'Igreja Filha',cat:'plataforma',def:'É uma unidade vinculada à igreja matriz/sede, criada quando uma igreja possui outras unidades ou congregações. A igreja filha segue a estrutura da igreja principal, mas possui seu próprio cadastro e organização dentro da plataforma.'},
+  {term:'Key Account',cat:'plataforma',def:'Termo corporativo usado para definir clientes estratégicos que possuem o maior impacto nos resultados de uma empresa. Neste caso, igrejas estratégicas para a empresa, seja por parceria, tamanho etc.'},
+  {term:'Aplicação',cat:'plataforma',def:'Qualquer tipo de sistema da inChurch (Eventos, Pessoas, Cuidado, etc.)'},
+  {term:'Plano Pró',cat:'plataforma',def:'Pode cadastrar igreja filha, tem possibilidade de personalização do aplicativo e Atalhos como módulo adicional.'},
+  {term:'Plano Lite',cat:'plataforma',def:'O plano Lite inclui as funcionalidades básicas para utilização do aplicativo da igreja, permitindo uma comunicação mais simples com os membros.'},
+  {term:'Produção',cat:'ambientes',def:'Ambiente onde o usuário acessa o sistema, onde a igreja faz as coisas acontecerem de fato.'},
+  {term:'Staging',cat:'ambientes',def:'Ambiente de testes, onde o usuário comum não tem acesso. É onde fazemos os testes das funcionalidades antes de subir para Produção.'},
+  {term:'Desenvolvimento',cat:'ambientes',def:'Ambiente voltado para criação de novas funcionalidades, melhorias ou correção de bugs.'},
+  {term:'Deploy',cat:'ambientes',def:'Processo de publicar uma nova versão de uma aplicação em um servidor para que ela possa ser utilizada. O deploy é o que faz uma alteração de código chegar ao ambiente onde o sistema realmente roda.'},
+  {term:'Front-End',cat:'tecnicos',def:'Lugar onde o usuário interage visualmente com o sistema inChurch.'},
+  {term:'Back-End',cat:'tecnicos',def:'Parte do sistema onde ocorre os processamentos das regras e pedidos do usuário, o "Cérebro do Sistema".'},
+  {term:'LOG',cat:'tecnicos',def:'Registro que é feito a cada ação do cliente no ambiente de produção.'},
+  {term:'Servidor',cat:'tecnicos',def:'É a máquina (física ou na nuvem) onde a aplicação fica rodando. Exemplos: Vercel, Railway, Google Cloud e AWS.'},
+  {term:'API',cat:'tecnicos',def:'Conjunto de regras que permite a comunicação entre sistemas. O Front-End envia uma requisição, o Back-End processa e retorna uma resposta em formato JSON.'},
+  {term:'Endpoint',cat:'tecnicos',def:'Endereço específico dentro de uma API. Exemplo: /api/v1/login, /api/v1/events, /api/v1/users'},
+  {term:'Request (Requisição)',cat:'tecnicos',def:'É tudo que o cliente envia para o servidor: URL, Método HTTP, Headers e Body.'},
+  {term:'Response',cat:'tecnicos',def:'É a resposta da Requisição feita, enviada para o Front-End em formato .json, que processa e exibe de forma visual ao usuário.'},
+  {term:'JSON',cat:'tecnicos',def:'Formato utilizado para armazenar e trocar dados entre sistemas. É a linguagem que Frontend, Backend, APIs e bancos de dados frequentemente usam para se comunicar.'},
 ];
 
 // Sem módulos com checkbox agora
@@ -1156,10 +1170,21 @@ function buildLinks(){
 function renderGloss(items){
   var grid=document.getElementById('gloss-grid');grid.innerHTML='';
   if(!items.length){grid.innerHTML='<div class="gloss-empty">Nenhum termo encontrado.</div>';return;}
-  items.forEach(function(g){
-    var d=document.createElement('div');d.className='gloss-item';
-    d.innerHTML='<div class="gloss-term">'+g.term+'</div><div class="gloss-def">'+g.def+'</div>';
-    grid.appendChild(d);
+  GLOSS_CATEGORIAS.forEach(function(cat){
+    var catItems=items.filter(function(g){return g.cat===cat.id;});
+    if(!catItems.length)return;
+    var section=document.createElement('div');section.className='gloss-cat-section';
+    var head=document.createElement('div');head.className='gloss-cat-head';
+    head.innerHTML='<span class="gloss-cat-icon">'+cat.icon+'</span><span class="gloss-cat-label">'+cat.label+'</span>';
+    section.appendChild(head);
+    var catGrid=document.createElement('div');catGrid.className='gloss-grid';
+    catItems.forEach(function(g){
+      var d=document.createElement('div');d.className='gloss-item';
+      d.innerHTML='<div class="gloss-term">'+g.term+'</div><div class="gloss-def">'+g.def+'</div>';
+      catGrid.appendChild(d);
+    });
+    section.appendChild(catGrid);
+    grid.appendChild(section);
   });
 }
 function filterGloss(){
