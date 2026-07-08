@@ -32,7 +32,8 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 .logo-grid{display:grid;grid-template-columns:repeat(3,8px);gap:2px;}
 .logo-grid span{display:block;width:8px;height:8px;border-radius:2px;}
 .logo-grid .g{background:var(--g);}
-.logo-grid .d{background:#4a6640;}
+.logo-grid .d{background:#2d6a1f;}
+.logo-grid .e{background:transparent;}
 .logo-word{font-size:16px;font-weight:700;color:#fff;letter-spacing:-0.5px;}
 .logo-word em{color:var(--g);font-style:normal;}
 .topbar-divider{width:1px;height:18px;background:rgba(255,255,255,0.15);}
@@ -85,7 +86,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);min-h
 .org-root span{font-size:11px;font-weight:400;color:rgba(255,255,255,0.5);display:block;margin-top:4px;}
 .org-connector-v{width:2px;height:28px;background:var(--border2);margin:0 auto;}
 .org-connector-h{width:100%;height:2px;background:var(--border2);}
-.org-branches{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;width:100%;}
+.org-branches{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;width:100%;}
 .org-branch{display:flex;flex-direction:column;align-items:center;}
 .org-branch-line{width:2px;height:24px;background:var(--border2);}
 .org-node{border:1px solid var(--border2);border-radius:12px;background:var(--card);width:100%;cursor:pointer;transition:border-color .2s,box-shadow .2s,transform .2s;overflow:hidden;}
@@ -309,9 +310,9 @@ function toggleOrg(id){
 <nav class="topbar">
   <div class="logo">
     <div class="logo-grid">
-      <span class="g"></span><span class="g"></span><span class="g"></span>
-      <span class="d"></span><span class="g"></span><span class="d"></span>
-      <span class="d"></span><span class="d"></span><span class="g"></span>
+      <span class="e"></span><span class="d"></span><span class="e"></span>
+      <span class="g"></span><span class="d"></span><span class="g"></span>
+      <span class="e"></span><span class="d"></span><span class="e"></span>
     </div>
     <div class="logo-word"><em>in</em>church</div>
   </div>
@@ -366,12 +367,6 @@ function toggleOrg(id){
     <div class="section-label">estrutura · customer experience</div>
     <p style="font-size:13px;color:var(--text2);margin-bottom:1.5rem;line-height:1.7;max-width:640px;">A área de Customer Experience tem como missão garantir que cada cliente tenha uma jornada de sucesso, desde o primeiro contato até a consolidação do relacionamento. Clique em cada área para conhecer as responsabilidades e o time responsável.</p>
 
-    <div class="team-stats">
-      <div class="team-stat"><div class="team-stat-num">24</div><div class="team-stat-label">Pessoas</div></div>
-      <div class="team-stat"><div class="team-stat-num">2</div><div class="team-stat-label">Áreas</div></div>
-      <div class="team-stat"><div class="team-stat-num">6</div><div class="team-stat-label">Squads</div></div>
-    </div>
-
     <div class="org-wrap">
       <div class="org-root"><div class="org-root-eyebrow">Gestão</div><div class="org-root-name">Jonas Manhães</div><span>Customer Experience · inChurch</span></div>
       <div class="org-connector-v"></div>
@@ -400,6 +395,10 @@ function toggleOrg(id){
                 <div class="team-pill"><span class="team-dot" style="background:#9b7ef8;"></span>Guilherme Souza</div>
                 <div class="team-pill"><span class="team-dot" style="background:#9b7ef8;"></span>Felipe Teixeira</div>
                 <div class="team-pill"><span class="team-dot" style="background:#9b7ef8;"></span>Tiago Triani</div>
+              </div>
+              <div class="team-group-label" style="margin-top:10px;">Key Accounts</div>
+              <div class="team-pills">
+                <div class="team-pill"><span class="team-dot" style="background:#f0a84b;"></span>Marina Machado <span class="team-badge team-badge-ka">KA</span></div>
               </div>
             </div>
           </div>
@@ -438,8 +437,8 @@ function toggleOrg(id){
               <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Promover engajamento contínuo</div></div>
               <div class="team-group-label" style="margin-top:14px;">Time</div>
               <div class="team-pills">
-                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Igor Firmino</div>
-                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Hannibal Ferreira</div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Igor Firmino <span class="team-badge team-badge-ka">KA</span></div>
+                <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Hannibal Ferreira <span class="team-badge team-badge-ka">KA</span></div>
                 <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Thamara de Paula <span class="team-subnote">(Sara Nossa Terra)</span></div>
                 <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Gianmarco Lacerda</div>
                 <div class="team-pill"><span class="team-dot" style="background:#50b8e8;"></span>Noemi Garcia</div>
@@ -461,23 +460,6 @@ function toggleOrg(id){
               <div class="team-group-label" style="margin-top:14px;">Time</div>
               <div class="team-pills">
                 <div class="team-pill"><span class="team-dot" style="background:#e87070;"></span>Michely Nunes</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="org-branch"><div class="org-branch-line"></div>
-          <div class="org-node" id="org-ka" onclick="toggleOrg('org-ka')">
-            <div class="org-node-header"><div><div class="org-node-icon">⭐</div><div class="org-node-name">Key Account</div><div class="org-node-hint">Toque para saber mais</div></div><span class="org-node-chevron">&#8964;</span></div>
-            <div class="org-node-body">
-              <div class="org-node-desc">Responsável pelo acompanhamento estratégico dos clientes mais relevantes.</div>
-              <div class="org-resp-title">Responsabilidades</div>
-              <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Gerenciar clientes estratégicos</div></div>
-              <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Desenvolver planos de sucesso</div></div>
-              <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Identificar oportunidades estratégicas</div></div>
-              <div class="org-resp-item"><div class="org-resp-dot"></div><div class="org-resp-text">Atuar como parceiro consultivo</div></div>
-              <div class="team-group-label" style="margin-top:14px;">Time</div>
-              <div class="team-pills">
-                <div class="team-pill"><span class="team-dot" style="background:#f0a84b;"></span>Marina Machado <span class="team-badge team-badge-ka">KA</span></div>
               </div>
             </div>
           </div>
@@ -1251,15 +1233,15 @@ if(state.sent['feedback_final']){var fbtag=document.getElementById('fb-sent-tag'
   <div style="max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;">
     <div style="display:flex;align-items:center;gap:9px;">
       <div class="logo-grid" style="display:grid;grid-template-columns:repeat(3,8px);gap:2px;">
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:transparent;"></span>
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#2d6a1f;"></span>
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:transparent;"></span>
         <span style="display:block;width:8px;height:8px;border-radius:2px;background:#5ab52e;"></span>
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#2d6a1f;"></span>
         <span style="display:block;width:8px;height:8px;border-radius:2px;background:#5ab52e;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#5ab52e;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#4a6640;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#5ab52e;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#4a6640;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#4a6640;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#4a6640;"></span>
-        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#5ab52e;"></span>
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:transparent;"></span>
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:#2d6a1f;"></span>
+        <span style="display:block;width:8px;height:8px;border-radius:2px;background:transparent;"></span>
       </div>
       <span style="font-size:16px;font-weight:700;color:#fff;letter-spacing:-0.5px;"><em style="color:#5ab52e;font-style:normal;">in</em>church</span>
     </div>
